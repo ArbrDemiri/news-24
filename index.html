@@ -9,6 +9,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <script src="https://kit.fontawesome.com/a09a07ae0d.js" crossorigin="anonymous"></script>
+<style>
+  /* Bëje imazhet fleksibile */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Për ekranet më të vogla se 768px */
+  @media screen and (max-width: 768px) {
+
+    /* Header (logo + ikona) */
+    div[style*="display: flex"][style*="justify-content: space-between"] {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Box i lajmeve me padding 50px */
+    div[style*="display: flex"][style*="padding: 50px"] {
+      flex-direction: column;
+      padding: 20px !important;
+      gap: 20px !important;
+    }
+
+    /* Paragrafët e lajmeve */
+    p[style*="width:400px"] {
+      width: 100% !important;
+      font-size: 16px !important;
+    }
+
+    /* Grid i teknologjisë */
+    div[style*="display: grid"] {
+      grid-template-columns: 1fr !important;
+      padding: 20px !important;
+    }
+
+    /* Artikujt në teknologji */
+    div[style*="display:block"][style*="border:5px solid black"] {
+      margin-bottom: 20px;
+    }
+
+    /* Kategoritë (EKONOMI / TEKNOLOGJI) */
+    div[style*="background-color: red"] {
+      margin: 20px auto !important;
+      font-size: 14px !important;
+      padding: 10px 15px !important;
+    }
+
+  }
+</style>
 
 </head>
 <body>
@@ -147,4 +197,5 @@
 
 
 </body>
+
 </html>
